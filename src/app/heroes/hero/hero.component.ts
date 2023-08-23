@@ -18,4 +18,22 @@ export class HeroComponent {
     return `${ this.name } - ${ this.age}`;
   }
 
+  changeHero(): void {
+
+    if(this.name === 'ironman') {
+      this.name = 'spiderman';
+    } else {
+      this.name = 'ironman';
+    }
+  }
+
+  changeAge(): void {
+
+    if(this.age === 45) {
+      this.age = 25;
+    } else {
+      this.age = 45;
+    }
+  }
+
 }
