@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { MainPageComponent } from './pages/main-page.component';
 
 
@@ -9,6 +10,6 @@ import { MainPageComponent } from './pages/main-page.component';
   ],
   declarations: [
     MainPageComponent
-  ]
+  ],
 })
 export class DbzModule { }
