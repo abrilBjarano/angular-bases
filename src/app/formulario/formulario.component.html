@@ -1,8 +1,12 @@
+<h4>Agregar disco</h4>
+<br>
+
 <form class="row">
 
   <input
     type="text"
     [(ngModel)]="disc.name"
+    name="name"
     class="form-control mb-2"
     placeholder="Disco"
   >
@@ -10,13 +14,14 @@
   <input
     type="text"
     [(ngModel)]="disc.singer"
+    name="singer"
     class="form-control mb-2"
     placeholder="Artista"
   >
 
   <button
     type="submit"
-    class="btn btn-primary"
+    class="btn btn-primary mt-4"
     (click)="emitDisc()">
     Agregar disco
   </button>
