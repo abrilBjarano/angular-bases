@@ -1,0 +1,26 @@
+<form class="row">
+
+  <input
+    type="text"
+    [(ngModel)]="disc.name"
+    class="form-control mb-2"
+    placeholder="Disco"
+  >
+
+  <input
+    type="text"
+    [(ngModel)]="disc.singer"
+    class="form-control mb-2"
+    placeholder="Artista"
+  >
+
+  <button
+    type="submit"
+    class="btn btn-primary"
+    (click)="emitDisc()">
+    Agregar disco
+  </button>
+
+  <pre>{{ disc | json }}</pre>
+
+</form>
