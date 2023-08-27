@@ -17,7 +17,8 @@ export class ListComponent {
   }];
 
   onDeleteId(index: number): void {
-
+    this.onDeleteId.emit(index);
+    console.log({index});
   }
 
   onDeleteCharacter(index: number): void {
