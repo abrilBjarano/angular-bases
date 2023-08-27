@@ -13,4 +13,12 @@ export class ListComponent {
     power: 10
   }];
 
+
+  @Output()
+  public onDelete_List: EventEmitter<number> = new EventEmitter();
+
+  onDelete(index: number): void {
+    this.onDelete_List.emit(index)
+  }
+
 }
