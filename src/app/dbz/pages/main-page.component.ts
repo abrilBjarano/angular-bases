@@ -23,6 +23,8 @@ export class MainPageComponent {
     this.characters.push( character );
   }
 
+  // Eliminar el <li> con el ID que escuchó del hijo
+
   onDeleteCharacter_Main( indice: number ) {
     this.characters.splice(indice, 1);
   }

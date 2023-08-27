@@ -14,6 +14,8 @@ export class ListComponent {
   }];
 
 
+  // Emitir el ID de cada character para que el padre se suscriba ⬇️
+
   @Output()
   public onDelete_List: EventEmitter<number> = new EventEmitter();
 
