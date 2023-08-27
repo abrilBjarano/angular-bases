@@ -4,7 +4,6 @@ import { Character } from '../../interfaces/character.interface';
 @Component({
   selector: 'dbz-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
 })
 export class ListComponent {
 
@@ -12,12 +11,14 @@ export class ListComponent {
   public charactersList: Character[] = [{
     name: 'Trunks',
     power: 10
-  }]
+  }];
 
-  onDeleteCharacter(): void {
-    // TODO: Emitir el ID del personaje
-    // console.log(index);
+  onDeleteId(index: number): void {
 
+  }
+
+  onDeleteCharacter(index: number): void {
+    console.log({index});
   }
 
 }

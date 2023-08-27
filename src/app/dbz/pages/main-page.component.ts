@@ -20,8 +20,11 @@ export class MainPageComponent {
 
 
   onNewCharactersMain( character: Character ): void {
-
     this.characters.push( character );
+  }
+
+  onDeleteCharacter( index: number ): void {
+    this.characters.splice(index);
   }
 
 
