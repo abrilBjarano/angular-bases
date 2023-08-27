@@ -5,14 +5,13 @@
   <div class="col">
     <dbz-list
       [charactersList]="characters"
-      (onDelete)="onDeleteCharacter($event)"
     >
     </dbz-list>
   </div>
 
   <div class="col">
     <dbz-add-character
-      (onNewCharacterAdd)="onNewCharactersMain($event)"
+      (onNewCharacters_Add)="onNewCharacters_Main($event)"
     >
     </dbz-add-character>
   </div>

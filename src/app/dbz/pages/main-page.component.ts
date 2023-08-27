@@ -19,12 +19,8 @@ export class MainPageComponent {
   }];
 
 
-  onNewCharactersMain( character: Character ): void {
+  onNewCharacters_Main( character: Character ): void {
     this.characters.push( character );
-  }
-
-  onDeleteCharacter( index: number ) {
-    this.characters.splice(index, 1);
   }
 
 
