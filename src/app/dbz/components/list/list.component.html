@@ -25,6 +25,7 @@
       <span>{{ character.name }}</span>
       <strong> - Power: </strong>
       <span>{{ character.power }}</span>
+      <ng-template>{{ character.id }}</ng-template>
     </div>
 
 
@@ -32,7 +33,7 @@
 
     <button
       class="btn btn-danger"
-      (click)="onDelete(i)"
+      (click)="onDelete( character.id )"
     >
       X
     </button>

@@ -9,18 +9,21 @@ export class ListComponent {
 
   @Input()
   public charactersList: Character[] = [{
-    name: 'Trunks',
-    power: 10
+    id: '',
+    name: '',
+    power: 0
   }];
 
 
   // Emitir el ID de cada character para que el padre se suscriba ⬇️
 
   @Output()
-  public onDelete_List: EventEmitter<number> = new EventEmitter();
+  public onDelete_List: EventEmitter<string> = new EventEmitter();
 
-  onDelete(index: number): void {
-    this.onDelete_List.emit(index)
+  onDelete(id?: string): void {
+
+    if( !id ) return;
+    this.onDelete_List.emit(id);
   }
 
 }
