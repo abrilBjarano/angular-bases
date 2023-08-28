@@ -23,7 +23,7 @@ export class DbzService {
   }];
 
 
-  onNewCharacters_Service( character: Character ): void {
+  addCharacter_Service( character: Character ): void {
 
     const newCharacter: Character = { id: uuid(), ...character};
 
@@ -32,8 +32,7 @@ export class DbzService {
 
   // Eliminar el <li> con el ID que escuchó del hijo
 
-  deleteCharacterById( id: string ) {
-    this.characters.filter( character => character.id !== id );
+  deleteCharacterById_Service( id: string ) {
+    this.characters = this.characters.filter( character => character.id !== id );
   }
-
 }
